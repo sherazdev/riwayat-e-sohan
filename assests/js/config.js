@@ -1,0 +1,1 @@
+window.STORE_CONFIG = { whatsapp: "923004238576", jazzcash: "03068309100", easypaisa: "03177735344", accountHolder: "Muhammad Sheraz", minKg: 2, markupPerKg: 500, deliveryText: "TCS delivery charges are calculated separately and confirmed on WhatsApp before payment." };

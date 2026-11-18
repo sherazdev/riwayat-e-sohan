@@ -1,0 +1,10 @@
+
+# Keep admin and customer data private
+private-data/
+
+# Secret files
+.env
+.env.*
+
+# Node.js dependencies
+node_modules/
