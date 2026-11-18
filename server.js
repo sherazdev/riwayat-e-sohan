@@ -52,8 +52,11 @@ const server=http.createServer(async(req,res)=>{
   try{
    const body=await readBody(req);const customer=body.customer||{};
    const name=clean(customer.name,100),phone=clean(customer.phone,25),address=clean(customer.address,400),city=clean(customer.city,100),postal=clean(customer.postal,30),notes=clean(customer.notes,400);
-   if(!name||!/^\+?[0-9\s()-]{10,20}$/.test(phone)||address.length<10||!city)return send(res,400,{error:'Please provide valid name, phone, full address and city.'});
-   if(!Array.isArray(body.items)||!body.items.length||body.items.length>50)return send(res,400,{error:'Cart is empty or invalid.'});
+if (!name || !/^\+?[0-9\s()-]{10,20}$/.test(phone) || address.length < 10 || !city) {
+  return send(res, 400, {
+    error: 'Please provide valid name, phone, full address and city.'
+  });
+}   if(!Array.isArray(body.items)||!body.items.length||body.items.length>50)return send(res,400,{error:'Cart is empty or invalid.'});
    let kg=0,subtotal=0;const items=[];
    for(const item of body.items){const p=byId.get(item.id),qty=item.qty;
     if(!p||p.box||p.badge==='Sold Out'||!Number.isInteger(qty)||qty<1||qty>100||!Number.isFinite(p.price))return send(res,400,{error:'Invalid product or quantity in cart.'});
