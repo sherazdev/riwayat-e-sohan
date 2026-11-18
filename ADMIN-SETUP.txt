@@ -1,0 +1,22 @@
+RIWAAYAT-E-SOHAN ADMIN DASHBOARD
+
+Node.js 18+ required. In the website folder, run:
+Windows PowerShell:
+$env:ADMIN_KEY="choose-a-strong-secret-password-20-characters"
+node server.js
+
+Customer site: http://localhost:3000
+Private admin login: http://localhost:3000/admin.html
+
+The admin password is the ADMIN_KEY you set in the terminal. Do not share it or place it in JavaScript.
+Admin sessions expire after 8 hours or when server restarts.
+
+Dashboard: total orders, pending orders, payment pending, paid, unique anonymous visitors, visitors today/last 7 days, customers who ordered, customer/order details, filters, update order and payment statuses.
+
+IMPORTANT:
+- This is for local testing / a controlled deployment, not production hardened. Before public hosting, add HTTPS, persistent database/backups, login rate limiting, CSRF protection, proper user management and data retention policy.
+- Visitor counts are anonymous browser-based estimates, not verified unique people. Visitors who do not submit an order cannot be identified.
+- WhatsApp auto-notifications are NOT enabled.
+- Payment is NOT automatically verified; manually verify before marking Paid.
+- TCS charges are confirmed separately.
+- Existing website assets folder is spelled assests (not assets); keep paths consistent.

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#651b2c">
+    <meta name="description"
+        content="Riwaayat-e-Sohan - Premium Multani sweets. Minimum order 2 KG. Advance payment and WhatsApp ordering.">
+    <title>Shop All | Riwaayat-e-Sohan</title>
+    <link rel="stylesheet" href="./assests/css/style.css">
+</head>
+
+<body data-page="brands">
+    <div id="app">
+        <div class="wrap" style="padding:70px 20px">Loading Riwaayat-e-Sohan...</div>
+    </div>
+     <script src="./assests/js/config.js"></script>
+    <script src="./assests/js/app.js"></script>
+    <script>
+        (function () {try {let id = localStorage.getItem('rs_visitor_id'); if (!id) {id = 'v-' + Array.from(crypto.getRandomValues(new Uint8Array(16)), x => x.toString(16).padStart(2, '0')).join(''); localStorage.setItem('rs_visitor_id', id)} fetch('/api/visit', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({visitorId: id})}).catch(() => { })} catch (e) { } })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+RIWAAYAT-E-SOHAN | ADD TO CART HOVER UPDATE
+November 2026
+
+Changes:
+- Royal Maroon-to-Gold hover effect on Add to Cart buttons.
+- Subtle shine, lift, shadow and click feedback.
+- Keyboard focus indicator and reduced-motion support.
+- Applies to product listing cards and product detail Add to Cart buttons.
+- Does NOT change the JavaScript, cart, checkout, admin panel, products or prices.
+
+Install:
+1. Back up your current working website folder and order data.
+2. Extract this ZIP.
+3. Use the extracted Riwaayat-e-Sohan-brand folder as your project.
+4. Run your website using your existing Node.js setup.
+5. Visit shop.html or category pages and hover over Add to Cart on a desktop.
+
+Changed file: assests/css/style.css
+Added file: ADD-TO-CART-HOVER-UPDATE.txt
+
+IMPORTANT: This archive retains original project private-data/order records.
+Handle the ZIP privately and do not upload it to a public site as-is.
